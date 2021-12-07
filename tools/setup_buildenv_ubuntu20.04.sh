@@ -137,5 +137,9 @@ if [[ $PAUSEAFTEREACHLINE == "true" ]]; then
   echo "Step finished."
 fi
 
+echo "=== Step $((STEP++)): Adding udev rules to allow write access to USB devices for users ==="
+(echo '# DFU (Internal bootloader for STM32 MCUs)'
+ echo 'SUBSYSTEM=="usb", ATTRS{idVendor}=="0483", ATTRS{idProduct}=="df11", MODE="0664", GROUP="plugdev"') | sudo tee /etc/udev/rules.d/45-stdfu-permissions.rules > /dev/null
+
 echo "Finished setting up EdgeTX development environment."
 echo "Please execute: source ~/.bashrc"
