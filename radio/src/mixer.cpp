@@ -574,8 +574,7 @@ void evalInputs(uint8_t mode)
         TrainerMix* td = &g_eeGeneral.trainer.mix[ch];
         if (td->mode) {
           uint8_t chStud = td->srcChn;
-          int32_t vStud =
-              (ppmInput[chStud] - g_eeGeneral.trainer.calib[chStud]);
+          int32_t vStud = ppmInput[chStud];
           vStud *= td->studWeight;
           vStud /= 50;
           switch (td->mode) {

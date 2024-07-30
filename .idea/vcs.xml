@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/companion/src/thirdparty/yaml-cpp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/radio/src/thirdparty/AccessDenied" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/radio/src/thirdparty/FreeRTOS" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/radio/src/thirdparty/Segger_RTT" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/radio/src/thirdparty/libopenui/thirdparty/lvgl" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/radio/src/thirdparty/libopenui/thirdparty/stb" vcs="Git" />
+  </component>
+</project>
